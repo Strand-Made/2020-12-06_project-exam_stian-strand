@@ -1,0 +1,219 @@
+/* Navigation */
+nav ul li {
+  list-style: none;
+}
+/* Sticky Navbar */
+#STICKY-100WIDTH,
+.flex-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+#DISPLAY-NONE,
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+}
+
+.welcome-hero img {
+  height: 40px;
+}
+
+/* Hero Images */
+.welcome-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/hero-home-edit.jpg");
+}
+.launch-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/schedule-background.jpg");
+}
+
+/* Hero Styles */
+#FULLSCREEN-HERO,
+.welcome-hero,
+.launch-hero {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#POSITIONING-RELATIVE,
+.hero-text,
+.scroll-signal {
+  position: relative;
+  top: 250px;
+  overflow: hidden;
+  left: 50px;
+}
+
+.scroll-signal {
+  top: 80%;
+  left: 0;
+}
+
+/* Flex properties */
+
+#DISPLAY-FLEX-ROW,
+.flex-container,
+.rockets,
+.missions,
+.mission-info {
+  display: flex;
+  flex-direction: row;
+}
+
+#FLEX-JUST-SPACE-BETWEEN,
+.flex-container {
+  justify-content: space-between;
+}
+
+#FLEX-CENTER,
+.launch-hero,
+.rockets,
+.missions,
+.mission {
+  align-items: center;
+  justify-content: center;
+}
+
+#FLEX-JUSTIFY-SPACE-EVENLY,
+.mission {
+  justify-content: space-evenly;
+}
+
+#DISPLAY-FLEX-COLUMN,
+.launch-hero,
+.mission {
+  display: flex;
+  flex-direction: column;
+}
+
+#FLEX-WRAP,
+.rockets,
+.missions {
+  flex-wrap: wrap;
+}
+
+/* Future Launches Schedule table */
+.launches-table {
+  min-width: 400px;
+}
+
+td:first-child {
+  padding-top: 0.5em;
+  padding-left: 0;
+}
+td:last-child {
+  padding-bottom: 0.5em;
+  padding-right: 0;
+}
+
+td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 6.5em;
+  display: none;
+}
+
+th,
+td {
+  text-align: left;
+  display: table-cell;
+  padding: 1em;
+}
+
+/* Margin & Padding */
+
+/* Padding */
+
+#SMALL-PADDING,
+table {
+  padding: 0.5em;
+}
+
+/* Margin */
+#CENTER-MARGIN-10-TOP-BOTTOM,
+.launches-table {
+  margin-left: auto;
+  margin-right: auto;
+  margin: 10px 0;
+}
+
+#SMALL-MARGIN,
+nav ul li,
+.hero-text,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 1em;
+}
+
+#MEDIUM-MARGIN,
+.rocket,
+.mission {
+  margin: 1.5em;
+}
+
+/* Width properties */
+
+#MAX-WIDTH,
+.width-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#CARD-IMAGE,
+.rocket img,
+.mission img {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: 200px;
+}
+
+#CARD-IMAGE-SMALL,
+.mission img {
+  height: 100px;
+  width: 100px;
+}
+
+/* Card Style */
+
+#CARD-BORDER-RADIUS,
+table,
+.mission,
+.rocket {
+  border-radius: 0.5em;
+}
+
+#CARD-SIZE-MEDIUM,
+.rocket {
+  width: 400px;
+  height: 400px;
+}
+
+#CARD-SIZE.SMALL,
+.mission {
+  width: 300px;
+  height: 300px;
+}
+
+#SHADOW,
+.rocket,
+.mission {
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,162 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Squada+One&display=swap");
+/* Squada specs: cursive */
+
+#Roboto-1em,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+
+#SQUADA-HEADER-TEXT,
+ h1, h2, h3, h4 {
+  font-family: 'Squada One', cursive;
+
+}
+
+/*  Colors */
+
+#PAGE-BACKGROUND-COLOR,
+.missions,
+.rockets-section,
+body {
+  background-color: #003b59;
+}
+
+#DARK-FOOTER-COLOR,
+footer {
+  background-color: #3D1333;
+}
+
+#LIGHT-SPACE-COLOR,
+.mission,
+.rocket {
+  background-color: #005288;
+}
+
+#CALL-TO-ACTION-BRIGHT,
+.btn-live {
+  background-color: #e2cd12;
+}
+
+#RED-WARNING-TEXT,
+.red-marked {
+  color: #c52121;
+}
+
+#YELLOW-WARNING-TEXT,
+.yellow-marked {
+  color: #e2cd12;
+}
+
+#WHITE-BACKGROUND,
+.btn:hover,
+.btn-small:hover {
+  background-color: #fff;
+}
+
+#WHITE-TEXT,
+html,
+a,
+.burger div,
+.btn,
+.btn-small {
+  color: #ffff;
+}
+
+#DARK-TEXT,
+.btn:hover,
+.btn-small:hover {
+  color: #000;
+}
+
+/* Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#TEXT-ALIGN-CENTER,
+.scroll-signal i,
+h2,
+h3,
+h4,
+td,
+th,
+.btn,
+.btn-small {
+  text-align: center;
+}
+
+#DISPLAY-BLOCK,
+.hero-text,
+.scroll-signal i,
+td {
+  display: block;
+}
+
+#DISPLAY-INLINE-BLOCK,
+nav ul li,
+.btn,
+.btn-small {
+  display: inline-block;
+}
+
+/* Font Sizes */
+#LARGE-TEXT,
+.hero-text h1 {
+  font-size: 2em;
+}
+
+#MEDIUM-TEXT,
+.scroll-signal i {
+  font-size: 1.8em;
+}
+
+#SMALL-MEDIUM-TEXT,
+.launches-table {
+  font-size: 1.1em;
+}
+
+#BUTTON-TEXT,
+.btn,
+.btn-small {
+  font-size: 0.8em;
+}
+
+/* Buttons */
+.btn,
+.btn-small {
+  background: none;
+  border: 1px solid white;
+}
+
+#BUTTON-STYLE-BIG,
+.btn,
+.btn-live,
+.btn-small {
+  width: 100px;
+  border-radius: 0.2em;
+}
+
+#BUTTON-STYLE-MEDIUM,
+.btn-small {
+  width: 100px;
+}
+
+#BUTTON-HOVER .btn-live:hover,
+.btn:hover,
+.btn-small:hover {
+  cursor: pointer;
+}
+
+#BUTTON-PADDING,
+.btn,
+.btn-live,
+.btn-small {
+  padding: 0.5em 0.8em;
+}
