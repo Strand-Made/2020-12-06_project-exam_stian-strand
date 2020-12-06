@@ -6,6 +6,7 @@ const id = rparams.get("id");
 const missionHeroContainer = document.querySelector(".mission-hero");
 const missionInfoContainer = document.querySelector(".mission-info");
 const specsContainer = document.querySelector(".mission-specs");
+// if there is no id - return to home
 if (id === null) {
   document.location.href = "index.html";
 }
@@ -127,7 +128,7 @@ async function mission() {
     console.log(result);
   } catch (error) {
     console.log(error);
-    missionInfoContainer.innerHTML = `An error has occured: ${error}`;
+    missionInfoContainer.innerHTML = `An error has occured! Please try again later`;
   }
 }
 mission();

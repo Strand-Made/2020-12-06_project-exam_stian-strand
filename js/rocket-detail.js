@@ -46,6 +46,14 @@ async function getRockets() {
                                       </div>
 
         `;
+    const rocketImg = document.querySelectorAll(
+      ".rocket-thumbnails-images img"
+    );
+    rocketImg.onerror = () => {
+      result.flickr_images[1] =
+        "http://bango.one/project-exam/assets/spacex-img-placeholder.png";
+      console.log("Error getting image from source");
+    };
     // Create Rocket specs
     specsContainer.innerHTML += `
                                     <div class= "about-rocket">

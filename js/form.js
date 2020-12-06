@@ -8,7 +8,7 @@ const emailError = document.querySelector("#email-error");
 
 const subject = document.querySelector("#subject");
 const subjectError = document.querySelector("#subject-error");
-
+// form validation
 function formValidate() {
   event.preventDefault();
   if (lengthHandler(name.value, 2) === true) {
@@ -32,7 +32,7 @@ function formValidate() {
 }
 
 form.addEventListener("submit", formValidate);
-
+// reusable length validator
 function lengthHandler(value, lngth) {
   if (value.trim().length > lngth) {
     return true;
@@ -40,7 +40,7 @@ function lengthHandler(value, lngth) {
     return false;
   }
 }
-
+// Validate email
 function emailValidate(email) {
   const regEx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const patternMatch = regEx.test(email);
