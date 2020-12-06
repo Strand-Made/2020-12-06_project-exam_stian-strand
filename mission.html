@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SpaceX Center | Mission</title>
+    <title>SpaceX Launch Center | Mission</title>
     <meta name="description" content="" />
+    <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/utilities.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/missions.css" />
 
     <link
       rel="stylesheet"
@@ -17,35 +18,85 @@
   </head>
 
   <body>
-    <div class="flex-container">
-      <a href="index.html"
-        ><img src="assets/spacex-logo.png" alt="SpaceX logo"
-      /></a>
-      <nav>
-        <ul>
-          <li><a class="active" href="#">Missions</a></li>
-          <li><a href="vehicles.html">Vehicles</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-        <div class="burger-menu">
-          <div class="b1"></div>
-          <div class="b2"></div>
-          <div class="b3"></div>
-        </div>
-      </nav>
-    </div>
+    <section class="mission-showcase">
+      <div class="nav-container">
+        <a href="index.html"
+          ><img
+            class="spacex-center-logo"
+            src="assets/spacex-center-logo.png"
+            alt="SpaceX logo"
+        /></a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="missions.html">Missions</a></li>
+            <li><a href="rockets.html">Rockets</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+          <div class="burger-menu">
+            <div class="b1"></div>
+            <div class="b2"></div>
+            <div class="b3"></div>
+          </div>
+        </nav>
+      </div>
+    </section>
 
-    <section class="mission-hero"></section>
-
+    <section class="mission-hero">
+      <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
     <section class="mission-info"></section>
+    <section class="mission-specs"></section>
 
     <section class="footer">
       <footer>
-        <div class="social"></div>
-        <div class="copyright"></div>
-        <div class="github"></div>
+        <div class="social">
+          <h4>Links</h4>
+          <ul>
+            <li>
+              <a href="flickr.com/spacex"
+                ><i class="fab fa-flickr"></i>SpaceX Flickr</a
+              >
+            </li>
+            <li>
+              <a href="twitter.com/spacex"
+                ><i class="fab fa-twitter"></i>SpaceX Twitter</a
+              >
+            </li>
+            <li>
+              <a href="linkedin.com/spacex"
+                ><i class="fab fa-linkedin"></i>SpaceX LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href=" https://spacex.com"
+                ><img
+                  class="spaceX-footer-img"
+                  src="assets/spacex-logo.png"
+                  alt="SpaceX Logo"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <nav>
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="missions.html">Missions</a></li>
+              <li><a href="rockets.html">Rockets</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="copyright">© Bango 2020</div>
       </footer>
     </section>
     <script src="js/mission-details.js"></script>
+    <script src="js/nav.js"></script>
   </body>
 </html>

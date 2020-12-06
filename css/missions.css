@@ -1,0 +1,159 @@
+/* SHOWCASE */
+.mission-showcase {
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("http://bango.one/project-exam/assets/mission-showcase.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url("http://bango.one/project-exam/assets/mission-showcase.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("http://bango.one/project-exam/assets/mission-showcase.jpg");
+}
+
+#TOP-SHOWCASE-HERO,
+.mission-showcase {
+  height: 50vh;
+  width: 99vw;
+  background-position: center center;
+}
+
+/* CARD-ABOUT-MISSION */
+.card-hero {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 30%;
+  padding: 10px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.card-hero img {
+  display: block;
+  width: 40%;
+  margin: 10px auto;
+}
+
+/* ABOUT MISSION  */
+.about-mission {
+  max-width: 650px;
+}
+
+/* ABOUT-MISSION ICONS */
+.about-mission i {
+  font-size: 1.8em;
+}
+
+.about-mission a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.about-mission .reddit:hover {
+  color: #ff5700;
+}
+
+.about-mission .wiki:hover {
+  color: #000;
+}
+
+.about-mission {
+  padding: 10px;
+}
+
+.list-mission-container {
+  width: 70%;
+}
+
+.mission-info {
+  margin-top: 50px;
+}
+.mission-specs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.player-container {
+  width: 500px;
+}
+
+/* Back to top arrow */
+.back-to-top {
+  position: fixed;
+  top: 90%;
+  right: 1%;
+  border-radius: 0.8px;
+  border-style: none;
+  font-size: 1.3em;
+  transition: background-color 0.3s, visibility 0.3s, opacity 0.3s;
+  opacity: 0;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.back-to-top:hover {
+  cursor: pointer;
+}
+.appear {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Embedded youtube-player control MISSIONS CSS */
+.youtube-player {
+  max-width: 500px;
+}
+
+.player-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.player-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .mission-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 650px) {
+  .player-container {
+    width: 400px;
+  }
+}

@@ -1,0 +1,114 @@
+/* Hero Images */
+.welcome-hero {
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("http://bango.one/project-exam/assets/hero-home-edit.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url("http://bango.one/project-exam/assets/hero-home-edit.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("http://bango.one/project-exam/assets/hero-home-edit.jpg");
+}
+
+.launch-hero {
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("http://bango.one/project-exam/assets/schedule-background.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url("http://bango.one/project-exam/assets/schedule-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("http://bango.one/project-exam/assets/schedule-background.jpg");
+}
+
+.welcome-hero {
+  background-attachment: fixed;
+}
+
+.scroll-signal {
+  top: 70%;
+  left: 0;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.hero-text {
+  top: 250px;
+}
+
+/* Future Launches Schedule table */
+.launches-table {
+  min-width: 400px;
+  font-size: 1.1rem;
+}
+
+td:first-child {
+  padding-top: 0.5em;
+  padding-left: 0;
+}
+
+td:last-child {
+  padding-bottom: 0.5em;
+  padding-right: 0;
+}
+
+td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 6.5em;
+  display: none;
+}
+
+th,
+td {
+  text-align: left;
+  display: table-cell;
+  padding: 1em;
+}
+/* Missions  */
+.missions-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.missions-section .btn {
+  display: block;
+}
+
+/* Rockets */
+.rockets img {
+  border-radius: 0.1em;
+}
+
+/* About SpaceX homepage */
+.spacex-about {
+  text-align: left;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 2fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  border-bottom: 1px dotted #fff;
+  border-top: 1px dotted #fff;
+}
+
+.space-about h3 {
+  margin: 0;
+  text-align: left;
+}
+
+.spacex-about div {
+  padding: 10px;
+  margin: 10px;
+}

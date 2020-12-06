@@ -9,7 +9,8 @@
       content="Browse all SpaceX rockets and learn what makes the rockets fly"
     />
     <link rel="stylesheet" href="css/utilities.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/rockets.css" />
+    <link rel="stylesheet" href="css/global.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -19,14 +20,18 @@
   </head>
 
   <body>
-    <div class="flex-container">
+    <div class="nav-container">
       <a href="index.html"
-        ><img src="assets/spacex-logo.png" alt="SpaceX logo"
+        ><img
+          class="spacex-center-logo"
+          src="assets/spacex-center-logo.png"
+          alt="SpaceX logo"
       /></a>
-      <nav>
+      <nav class="main-nav">
         <ul>
+          <li><a href="index.html">Home</a></li>
           <li><a href="missions.html">Missions</a></li>
-          <li><a href="vehicles.html">Vehicles</a></li>
+          <li><a href="rockets.html">Rockets</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
         <div class="burger-menu">
@@ -39,21 +44,64 @@
     <section class="rocket-info">
       <div class="grid-container container-width">
         <div class="rocket-description"></div>
-        <div class="rocket-image-carousel"></div>
-        <div class="rocket-specs"></div>
+        <div class="rocket-thumbnails">
+          <h3>Images</h3>
+          <div class="rocket-thumbnails-images"></div>
+        </div>
+        <div class="rocket-specs">
+          <h2>Rocket Specifications</h2>
+        </div>
+        <div class="rocket-links">
+          <p>For more visit <a href="www.spacex.com">SpaceX</a></p>
+        </div>
       </div>
     </section>
 
-    <div class="links">
-      <p>For more visit <a href="www.spacex.com">SpaceX</a></p>
-    </div>
     <section class="footer">
       <footer>
-        <div class="social"></div>
-        <div class="copyright"></div>
-        <div class="github"></div>
+        <div class="social">
+          <h4>Links</h4>
+          <ul>
+            <li>
+              <a href="flickr.com/spacex"
+                ><i class="fab fa-flickr"></i>SpaceX Flickr</a
+              >
+            </li>
+            <li>
+              <a href="twitter.com/spacex"
+                ><i class="fab fa-twitter"></i>SpaceX Twitter</a
+              >
+            </li>
+            <li>
+              <a href="linkedin.com/spacex"
+                ><i class="fab fa-linkedin"></i>SpaceX LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href=" https://spacex.com"
+                ><img
+                  class="spaceX-footer-img"
+                  src="assets/spacex-logo.png"
+                  alt="SpaceX Logo"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <nav>
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="missions.html">Missions</a></li>
+              <li><a href="rockets.html">Rockets</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="copyright">© Bango 2020</div>
       </footer>
     </section>
     <script src="js/rocket-detail.js"></script>
+    <script src="js/nav.js"></script>
   </body>
 </html>

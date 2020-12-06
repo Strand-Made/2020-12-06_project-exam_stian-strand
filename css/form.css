@@ -1,0 +1,116 @@
+/* FORM STYLING */
+.about-contact-form {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 800px;
+}
+.form-section {
+  margin-top: 10px;
+}
+input {
+  padding: 1em;
+  width: 100%;
+  border: none;
+  border-radius: 0.8em;
+}
+
+label,
+.form-error {
+  margin: 5px;
+}
+
+label {
+  cursor: pointer;
+}
+
+.form-error {
+  display: none;
+}
+
+.form-input {
+  margin: 0.8em;
+}
+
+form:focus-within {
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.6);
+}
+
+input:hover,
+textarea:hover {
+  -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+  outline: red;
+}
+
+form h2 {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+textarea {
+  margin-bottom: 0.9em;
+  width: 100%;
+  padding: 1em;
+  border: none;
+  border-radius: 0.8em;
+  resize: none;
+  overflow: auto;
+}
+
+form {
+  padding: 1em;
+  margin: 0.8em;
+}
+
+form div {
+  width: 100%;
+}
+
+.about-center-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 10px;
+  max-width: 500px;
+}
+
+form:focus-within {
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
+form {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+@media (prefers-reduced-motion) {
+  form:focus-within {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  form {
+    -webkit-transition: -webkit-transform none;
+    transition: -webkit-transform none;
+    -o-transition: transform none;
+    transition: transform none;
+    transition: transform none, -webkit-transform none;
+  }
+}
