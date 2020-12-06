@@ -225,8 +225,7 @@ footer {
   margin-top: 100px;
   padding: 50px;
 }
-.copyright,
-.spacex-footer-link {
+.copyright {
   -ms-flex-item-align: end;
   -ms-grid-row-align: end;
   align-self: end;
