@@ -43,7 +43,7 @@ async function mission() {
     missionHeroContainer.innerHTML = "";
 
     missionHeroContainer.innerHTML += `<div class="card-hero">
-                                        <h2> ${result.name} </h2>
+                                        <h1> ${result.name} </h1>
                                         <img src="${result.links.patch.small}" alt="Patch of ${result.name}"/>
                                         <p> Where: ${launchPadResult.name} </p>
                                         <p> When : ${regularDate} </p>
